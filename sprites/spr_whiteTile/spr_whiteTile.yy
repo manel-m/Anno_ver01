@@ -8,14 +8,14 @@
   "collisionTolerance": 0,
   "swfPrecision": 2.525,
   "bbox_left": 0,
-  "bbox_right": 255,
+  "bbox_right": 15,
   "bbox_top": 0,
-  "bbox_bottom": 319,
+  "bbox_bottom": 15,
   "HTile": false,
   "VTile": false,
   "For3D": false,
-  "width": 256,
-  "height": 320,
+  "width": 16,
+  "height": 16,
   "textureGroupId": {
     "name": "Default",
     "path": "texturegroups/Default",
@@ -24,12 +24,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"90c2ae37-78cf-4552-ac58-53f7792939dc","path":"sprites/spr_land/spr_land.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"90c2ae37-78cf-4552-ac58-53f7792939dc","path":"sprites/spr_land/spr_land.yy",},"LayerId":{"name":"88d76af4-b465-46b7-bd5b-7b0fba83d556","path":"sprites/spr_land/spr_land.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_land","path":"sprites/spr_land/spr_land.yy",},"resourceVersion":"1.0","name":"90c2ae37-78cf-4552-ac58-53f7792939dc","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"cdc165b9-ca4c-4c2d-a621-25fc66702145","path":"sprites/spr_whiteTile/spr_whiteTile.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"cdc165b9-ca4c-4c2d-a621-25fc66702145","path":"sprites/spr_whiteTile/spr_whiteTile.yy",},"LayerId":{"name":"1e38d435-a456-4939-8337-90cd59d09f21","path":"sprites/spr_whiteTile/spr_whiteTile.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_whiteTile","path":"sprites/spr_whiteTile/spr_whiteTile.yy",},"resourceVersion":"1.0","name":"cdc165b9-ca4c-4c2d-a621-25fc66702145","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
-    "spriteId": {"name":"spr_land","path":"sprites/spr_land/spr_land.yy",},
+    "spriteId": {"name":"spr_whiteTile","path":"sprites/spr_whiteTile/spr_whiteTile.yy",},
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 30.0,
@@ -41,7 +41,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"62e6b365-2648-4f7a-8b4e-552b5c513f46","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"90c2ae37-78cf-4552-ac58-53f7792939dc","path":"sprites/spr_land/spr_land.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"93afd486-2ebe-470e-bec3-67e4a909af62","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"cdc165b9-ca4c-4c2d-a621-25fc66702145","path":"sprites/spr_whiteTile/spr_whiteTile.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
     ],
     "visibleRange": null,
@@ -58,22 +58,22 @@
     "yorigin": 0,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"spr_land","path":"sprites/spr_land/spr_land.yy",},
+    "parent": {"name":"spr_whiteTile","path":"sprites/spr_whiteTile/spr_whiteTile.yy",},
     "resourceVersion": "1.3",
-    "name": "spr_land",
+    "name": "spr_whiteTile",
     "tags": [],
     "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"88d76af4-b465-46b7-bd5b-7b0fba83d556","tags":[],"resourceType":"GMImageLayer",},
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"1e38d435-a456-4939-8337-90cd59d09f21","tags":[],"resourceType":"GMImageLayer",},
   ],
   "nineSlice": null,
   "parent": {
-    "name": "tile_sprites",
-    "path": "folders/Sprites/tile_sprites.yy",
+    "name": "colorTiles",
+    "path": "folders/Sprites/colorTiles.yy",
   },
   "resourceVersion": "1.0",
-  "name": "spr_land",
+  "name": "spr_whiteTile",
   "tags": [],
   "resourceType": "GMSprite",
 }
