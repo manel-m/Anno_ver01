@@ -24,6 +24,7 @@
     {"id":{"name":"spr_land","path":"sprites/spr_land/spr_land.yy",},"order":3,},
     {"id":{"name":"spr_buildings","path":"sprites/spr_buildings/spr_buildings.yy",},"order":0,},
     {"id":{"name":"spr_Fields","path":"sprites/spr_Fields/spr_Fields.yy",},"order":1,},
+    {"id":{"name":"scr_score","path":"scripts/scr_score/scr_score.yy",},"order":0,},
     {"id":{"name":"rm_main","path":"rooms/rm_main/rm_main.yy",},"order":1,},
     {"id":{"name":"obj_house2","path":"objects/obj_house2/obj_house2.yy",},"order":1,},
     {"id":{"name":"spr_special","path":"sprites/spr_special/spr_special.yy",},"order":5,},

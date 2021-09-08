@@ -1,16 +1,10 @@
 {
-  "spriteId": {
-    "name": "spr_whiteTile",
-    "path": "sprites/spr_whiteTile/spr_whiteTile.yy",
-  },
+  "spriteId": null,
   "solid": false,
   "visible": true,
   "spriteMaskId": null,
   "persistent": false,
-  "parentObjectId": {
-    "name": "obj_whiteParent",
-    "path": "objects/obj_whiteParent/obj_whiteParent.yy",
-  },
+  "parentObjectId": null,
   "physicsObject": false,
   "physicsSensor": false,
   "physicsShape": 1,
@@ -33,7 +27,7 @@
     "path": "folders/Objects/colorTiles.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_whiteTile",
+  "name": "obj_whiteParent",
   "tags": [],
   "resourceType": "GMObject",
 }

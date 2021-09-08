@@ -2,3 +2,4 @@
 
 global.houseType = 52;
 global.build = true;
+global.houseId = id;
