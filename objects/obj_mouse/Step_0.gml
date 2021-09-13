@@ -18,21 +18,47 @@ if (global.build && mouse_check_button_pressed(mb_left)){
 	
 	//show_debug_message("data = " + string(data));
 	
-	if (data == 1) {
-		var lay_id2 = layer_get_id("Buildings_layer");
-		var map_id2 = layer_tilemap_get_id(lay_id2);
-		// set building number 52 on mouse position
-		tilemap_set(map_id2,global.houseType,gridX,gridY);
-		global.build = false;
-		global.houseId.visible = false
-		
+	if (data == 1) {		
+		// hide score grid
 		for (var i = 0; i < 9; ++i;) {
 			instance_find(obj_whiteTile,i).visible = false;
 	    }
+
+		// update player score
+		for (var cy = -1; cy <= 1; ++cy) {
+			for (var cx = -1; cx <= 1; ++cx) {
+				// compute grid coordinates for cell (cx, cy)
+				var gx = gridX + cx;
+				var gy = gridY + cy;
+			
+				var s = scr_cellScore(gx, gy, global.houseType);
+				global.score += s
+			}
+		}
+
+		// place a building on the map
+		var lay_id2 = layer_get_id("Buildings_layer");
+		var map_id2 = layer_tilemap_get_id(lay_id2);
+		tilemap_set(map_id2,global.houseType,gridX,gridY);
+		
+		global.build = false;
+		global.houseId.visible = false;
+		global.buildingsLeft -= 1;
+		
+		if (global.buildingsLeft == 0 ) {
+			if (global.score >= 5){
+				room_goto(rm_win);
+			} else {
+				room_goto(rm_gameOver);
+			}
+	
+		}
 	}	
 	
 	
 }
+
+
 
 if (global.build ) {
 	// (gridX, gridY) grid coordinates of cell under the mouse
@@ -51,10 +77,10 @@ if (global.build ) {
 			var gx = gridX + cx;
 			var gy = gridY + cy;
 			
-			score = scr_cellScore(gx, gy, global.houseType);
-			if score < 0 {
+			var s = scr_cellScore(gx, gy, global.houseType);
+			if s < 0 {
 				instance.image_blend = c_red 
-			} else if score > 0 {
+			} else if s > 0 {
 				instance.image_blend = c_green
 			} else {
 				instance.image_blend = c_white
