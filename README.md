@@ -8,3 +8,4 @@
 - add 3*3 grid follows the mouse
 - add the score depending on area of influence and buildings type
 - add win/gameover screens
+- add 4 levels

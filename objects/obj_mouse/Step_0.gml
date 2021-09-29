@@ -47,7 +47,8 @@ if (global.build && mouse_check_button_pressed(mb_left)){
 		
 		if (global.buildingsLeft == 0 ) {
 			if (global.score >= 5){
-				room_goto(rm_win);
+				//room_goto(rm_level2);
+				room_goto_next();
 			} else {
 				room_goto(rm_gameOver);
 			}

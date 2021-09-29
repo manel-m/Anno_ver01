@@ -3,6 +3,10 @@
 
 
 switch (room) {
+	case rm_level1:
+	case rm_level2:
+	case rm_level4:
+	case rm_level5:
 	case rm_mainGame:
 		draw_text(20,20,"SCORE: " + string(global.score));
 		break;
